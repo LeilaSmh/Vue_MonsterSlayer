@@ -33,6 +33,7 @@
       <h3 v-if="winner === 'monster'">You lost!</h3>
       <h3 v-if="winner === 'player'">You won!</h3>
       <h3 v-if="winner === 'draw'">It's a tie!</h3>
+      <button @click="resetGame">Play Again</button>
     </section>
     <section v-if="!winner" id="controls">
       <button @click="attackMonster">ATTACK</button>
