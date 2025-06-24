@@ -75,6 +75,9 @@ const app = Vue.createApp({
             this.attackPlayer();
             this.increaseRound();
         },
+        surrender() {
+            this.winner = 'monster';
+        },
         resetGame() {
             this.playerHealth = 100;
             this.monsterHealth = 100;
